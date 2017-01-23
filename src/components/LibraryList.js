@@ -13,8 +13,8 @@ class LibraryList extends Component {
     this.dataSource = ds.cloneWithRows(this.props.libraries);
   }
 
-  renderRow() {
-    return <ListItem />;
+  renderRow(library) {
+    return <ListItem library={library} />;
   }
 
   render() {
